@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<title>Add Receipt</title>
+ 	</head>
+ 	<body>
+ 		<div id="add-receipt-page" data-role="page" data-title="Add Receipt">
+ 			<header data-role="header">
+ 				<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+ 				<h1>Add Feed</h1>
+ 			</header>
+ 			<div data-role="content">
+ 				<p>Add your new expense receipt.</p>
+ 				<form id="add-receipt-form" name="add-receipt-form" action="add-receipt.html">
+ 					<div data-role="fieldcontain">
+ 						<label for="receipt-amount">Amount :</label>
+ 						<input type="text" id="receipt-amount" name="receipt-amount" required="required" />
+ 					</div>
+ 					<div data-role="fieldcontain">
+ 						<label for="receipt-date">Date :</label>
+ 						<input type="text" id="receipt-date" name="receipt-date" required="required" />
+ 					</div>
+ 					<div data-role="fieldcontain">
+ 						<label for="receipt-category">Category:</label>
+ 						<input type="text" id="receipt-category" name="receipt-category" required="required" />
+ 					</div>
+ 					<div data-role="fieldcontain">
+ 						<label for="receipt-payment-type">Payment Type:</label>
+ 						<input type="text" id="receipt-payment-type" name="receipt-payment-type" required="required" />
+ 					</div>
+ 					<div data-role="fieldcontain">
+ 						<label for="receipt-description">Description:</label>
+ 						<textarea id="receipt-description" name="receipt-description" required="required"></textarea>
+ 					</div>
+ 					<input type="submit" value="Add Receipt" />
+ 				</form>
+ 			</div>
+ 		</div>
+ 	</body>
+</html>
